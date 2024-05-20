@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./design.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, blue, green);
+}
+
+form {
+    box-shadow: 0 0 10px green;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 450px;
+    /* margin-left: 50px; */
+    height: 600px;
+    background-color: white;
+    line-height: 30px;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: blue;
+}
+
+input {
+    outline: none;
+    margin-left: 40px;
+
+    border: none;
+    border-bottom-width: 10em;
+    border-bottom: 1.3px solid black;
+    height: 30px;
+    width: 80%;
+}
+
+h3 {
+    font-weight: 540;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: green;
+    margin-left: 160px;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+}
+#acc{
+margin-left: 67px;
+}
+ span a{
+    text-decoration: none;
+}
+</style>
+<body>
+    <div id="container">
+       <form action="/form" method="post" autocomplete="off">
+        <h2>Registration From</h2>
+        <h3>Name</h3>
+        <input type="text" placeholder="Name" name="Username">
+        <!-- <hr width="80%" , margin="0px 20px"> -->
+        <h3>Email</h3>
+        <input type="text" placeholder="Email Address" name="email">
+        <h3>Country</h3>
+        <input type="text" placeholder="Country" name="country">
+        <h3>Phone</h3>
+        <input type="text" placeholder="Phone" name="mobile">
+        <h3>Password</h3>
+        <input type="password" placeholder="Password" name="pass"><br><br>
+        <button type="submit">Submit</button>
+        <h3 id="acc">Already have an account? <span><a href="#">Login Now</a></span></h3>
+       </form>
+    </div>
+</body>
+</html>
