@@ -7,7 +7,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(45deg, blue, green);
+    background: linear-gradient(45deg, blue, rgb(14, 139, 14));
 }
 
 form {
